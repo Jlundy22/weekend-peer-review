@@ -12,27 +12,48 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 
-// reducer for text feedback data
-const textFeedback = (state = [], action) => {
-  if (action.type === 'SET_Text') {
-    return action.payload;
-  }
-  return state;
-};
-
-// reducer for number feedback data
-const numberFeedback = (state = [], action) => {
+// reducer for feeling data
+const feelingReducer = (state = [], action) => {
   if (action.type === 'SET_NUMBER') {
     return action.payload;
   }
   return state;
 };
 
+// reducer for understanding data
+const understandingReducer = (state = [], action) => {
+  if (action.type === 'SET_NUMBER') {
+    return action.payload;
+  }
+  return state;
+};
+
+// reducer for support data
+const supportReducer = (state = [], action) => {
+  if (action.type === 'SET_NUMBER') {
+    return action.payload;
+  }
+  return state;
+};
+
+// reducer for comment data
+const commentReducer = (state = [], action) => {
+  if (action.type === 'SET_Text') {
+    return action.payload;
+  }
+  return state;
+};
+
+// reducer for review data
+
+
 // redux store
 const reduxStore = createStore(
   combineReducers({
-    numberFeedback,
-    textFeedback,
+    feelingReducer,
+    understandingReducer,
+    supportReducer,
+    commentReducer
   }),
   applyMiddleware(logger)
 );
