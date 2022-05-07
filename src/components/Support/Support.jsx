@@ -4,8 +4,14 @@ function Support() {
 
   return <div> <p>
     How well are you being supported?
-    (thank you)
   </p>
+  <form 
+    // onSubmit={handleSubmit}
+    >
+<input type="number" placeholder="Support?"
+  onChange={(event) => setName(event.target.value)}
+  value={name} />
+  </form>
   
   <Link to="/comments"><button>Next</button></Link></div>
 }
