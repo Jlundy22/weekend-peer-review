@@ -1,32 +1,29 @@
-<!-- <Router>
-      <div>
-        <h1>SPAs!</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/animals">Animals</Link>
-            </li>
-            <li>
-              <Link to="/plants">Plants</Link>
-            </li>
-          </ul>
-        </nav>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/animals">
-          <Animals />
-        </Route>
-        <Route exact path="/plants">
-          <Plants />
-        </Route>
-        <Route exact path="/animals/:animalId">
-          <AnimalDetails />
-        </Route>
-      </div>
-    </Router>
+<!-- import React, { useState } from 'react';
+import axios from 'axios';
+import { useHistory } from 'react-router-dom'
+
+function Feeling() {
+    const [feeling, setFeeling] = useState(0);
+    const history = useHistory();
+
+    const handleFeelings = () => {
+        //dispatch the feeling to the store
+        history.push('/understanding')
+    }
+
+  return (
+    <div>
+      <h1>How are you feeling today?</h1>
+      <label htmlFor="feeling">Feeling?</label>
+      <input 
+        type="number" 
+        name="feeling" 
+        value={feeling}
+        onChange={(e)=> setFeeling(e.target.value)}/>
+        <button onClick={handleFeelings}>NEXT</button>
+    
+    </div>
   );
-} -->
+}
+
+export default Feeling; -->
