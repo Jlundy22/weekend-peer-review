@@ -6,7 +6,7 @@ function ThankYou() {
 
   return <div>
     <p>
-      "You say thank you, Gilbert."
+      Thank you!
     </p>
     <Link to="/"><button>Start Over?!</button></Link>
 

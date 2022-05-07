@@ -9,9 +9,7 @@ import Support from '../Support/Support';
 import ThankYou from '../ThankYou/ThankYou';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
-
 function App() {
-
 
 
   return (

@@ -5,8 +5,7 @@ function Comments() {
 
   return <div>
     <p>
-      Comments from the peanut gallery
-    </p>
+    Any comments you want to leave?    </p>
     <Link to="/thankyou"><button>Next</button></Link>
   </div>
 }

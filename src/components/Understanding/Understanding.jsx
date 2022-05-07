@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 function Understanding() {
 
   return <div>
-    <p>Understanding nothing, he valiantly charged into the task...</p>
+    <p>How well are you understanding the content?</p>
     
     <Link to="/support"><button>Next</button></Link></div>
 }
