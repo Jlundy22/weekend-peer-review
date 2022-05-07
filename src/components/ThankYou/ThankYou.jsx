@@ -1,4 +1,3 @@
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 // SUBMISSION SUCCESS PAGE
 
@@ -10,7 +9,6 @@ function ThankYou() {
     <p>
       Thank you!
     </p>
-    <Link to="/"><button>Start Over?!</button></Link>
 
   </div>
 }

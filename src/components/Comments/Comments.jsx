@@ -1,20 +1,30 @@
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 function Comments() {
+  const [comments, setComments] = useState(0);
+  const history = useHistory();
 
 
-  return <div>
-    <p>
-    Any comments you want to leave?    </p>
-    <form 
-    // onSubmit={handleSubmit}
-    >
-<input type="text" placeholder="Comments?"
-  onChange={(event) => setName(event.target.value)}
-  value={name} />
-  </form>
-    <Link to="/thankyou"><button>Next</button></Link>
-  </div>
+  const handleComments = () => {
+    // dispatch comments value to the store from here
+    history.push('/review')
+  }
+
+  return (
+    <div>
+      <h1>Do you have any comments?</h1>
+      <label htmlFor="comments"></label>
+      <input
+        type="text"
+        name="comments?"
+        value={comments}
+        onChange={(event) => setComments(event.target.value)} />
+      <button onClick={handleComments}
+      >Next</button>
+    </div >
+  )
 }
 
 export default Comments;
