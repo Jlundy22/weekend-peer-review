@@ -1,4 +1,5 @@
 -- Database should be prime_feedback
+
 CREATE DATABASE "prime_feedback";
 
 -- Switch to "prime_feedback" before making:
