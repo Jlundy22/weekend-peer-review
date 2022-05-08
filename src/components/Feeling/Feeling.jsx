@@ -11,9 +11,22 @@ function Feeling() {
   const history = useHistory();
   const dispatch = useDispatch();
 
-
+  // function inputValidation(){
+  //   if (setFeeling.value == '')
+  //   alert("Input field must be filled out");
+  //   return false;
+  // }
   
   const handleFeelings = () => {
+    if (feeling === ''){
+      alert('please complete the form to advance to the next page')
+      return false;
+    }
+    else if (feeling <1 || feeling > 10){
+      alert('please enter a number between 1 and 10')
+      return false;
+    }
+
     // dispatch feelings value to the store from here
     history.push('/understanding');
     dispatch({
@@ -25,6 +38,7 @@ function Feeling() {
   return (
     <div>
       <h1>How are you feeling today?</h1>
+      <h5>(on a scale of 1-10)</h5>
       <label htmlFor="feeling"></label>
       <input
         type="number"

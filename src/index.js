@@ -4,16 +4,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
-import { createStore, combineReducers, 
-  applyMiddleware } from 'redux';
-import registerServiceWorker 
-from './registerServiceWorker';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 
 // reducer for feeling data
-const feelingReducer = (state = [], action) => {
+const feelingReducer = (state = 0, action) => {
   if (action.type === 'SET_FEELING') {
     return action.payload;
   }
@@ -21,7 +19,7 @@ const feelingReducer = (state = [], action) => {
 };
 
 // reducer for understanding data
-const understandingReducer = (state = [], action) => {
+const understandingReducer = (state = 0, action) => {
   if (action.type === 'SET_UNDERSTANDING') {
     return action.payload;
   }
@@ -29,7 +27,7 @@ const understandingReducer = (state = [], action) => {
 };
 
 // reducer for support data
-const supportReducer = (state = [], action) => {
+const supportReducer = (state = 0, action) => {
   if (action.type === 'SET_SUPPORT') {
     return action.payload;
   }
@@ -37,7 +35,7 @@ const supportReducer = (state = [], action) => {
 };
 
 // reducer for comment data
-const commentReducer = (state = [], action) => {
+const commentReducer = (state = '', action) => {
   if (action.type === 'SET_COMMENTS') {
     return action.payload;
   }

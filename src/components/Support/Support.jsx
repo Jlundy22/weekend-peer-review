@@ -15,6 +15,15 @@ function Support() {
 
 
   const handleSupport = () => {
+    if (support === ''){
+      alert('please complete the form to advance to the next page')
+      return false;
+    }
+    else if (support <1 || support > 10){
+      alert('please enter a number between 1 and 10')
+      return false;
+    }
+
     // dispatch support value to the store from here
     history.push('/comments');
     dispatch({
@@ -26,6 +35,7 @@ function Support() {
   return (
     <div>
       <h1>How well do you feel supported today?</h1>
+      <h5>(on a scale of 1-10)</h5>
       <label htmlFor="support"></label>
       <input
         type="number"

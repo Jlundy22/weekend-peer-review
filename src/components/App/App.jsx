@@ -57,7 +57,7 @@ function App() {
           </Route>
         </div>
         <div>
-          <Route exact path="/thankyou">
+          <Route exact path="/thankYou">
             <ThankYou />
           </Route>
         </div>
