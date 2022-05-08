@@ -22,7 +22,7 @@ const feelingReducer = (state = [], action) => {
 
 // reducer for understanding data
 const understandingReducer = (state = [], action) => {
-  if (action.type === 'SET_NUMBER') {
+  if (action.type === 'SET_UNDERSTANDING') {
     return action.payload;
   }
   return state;
@@ -30,7 +30,7 @@ const understandingReducer = (state = [], action) => {
 
 // reducer for support data
 const supportReducer = (state = [], action) => {
-  if (action.type === 'SET_NUMBER') {
+  if (action.type === 'SET_SUPPORT') {
     return action.payload;
   }
   return state;
@@ -38,7 +38,7 @@ const supportReducer = (state = [], action) => {
 
 // reducer for comment data
 const commentReducer = (state = [], action) => {
-  if (action.type === 'SET_Text') {
+  if (action.type === 'SET_COMMENTS') {
     return action.payload;
   }
   return state;
