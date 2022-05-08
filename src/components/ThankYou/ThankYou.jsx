@@ -1,15 +1,16 @@
-
-// SUBMISSION SUCCESS PAGE
+// ThankYou.jsx ~~ SUBMISSION SUCCESS PAGE
 
 
 function ThankYou() {
 
 
   return (<div>
-    <p>
+    <h1>
       Thank you!
-    </p>
-    // button that says "Leave new feedback?" and clears out survey data. 
+    </h1>
+    <button onClick={() => onReviewSubmit()}>
+      Leave New Feedback
+    </button>
   </div>)
 
 }

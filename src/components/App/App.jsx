@@ -13,24 +13,13 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 function App() {
 
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   // useEffect(() => {
   //   getFeedback();
   // }, [])
 
-  // const getFeedback = () => {
-  //   axios.get('/')
-  //   .then(response => {
-  //     dispatch({
-  //       type: ,
-  //       payload: response.data
-  //     }).catch (error => {
-  //       alert('Could not take feedback. Please try again later.');
-  //       console.log('Error on GET', error);
-  //     })
-  //   })
-  // }
+
 
 
 

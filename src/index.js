@@ -14,7 +14,7 @@ import logger from 'redux-logger';
 
 // reducer for feeling data
 const feelingReducer = (state = [], action) => {
-  if (action.type === 'SET_NUMBER') {
+  if (action.type === 'SET_FEELING') {
     return action.payload;
   }
   return state;

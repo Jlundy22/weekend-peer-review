@@ -1,15 +1,26 @@
+// Comments.jsx
+
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import {useHistory} from 'react-router-dom';
+
 
 function Comments() {
+  console.log('in Comments()');
   const [comments, setComments] = useState(0);
   const history = useHistory();
+  const dispatch = useDispatch();
+
 
 
   const handleComments = () => {
     // dispatch comments value to the store from here
-    history.push('/review')
+    history.push('/review');
+    dispatch({
+      type: 'SET_COMMENTS',
+      payload: comments        
+  });
   }
 
   return (
