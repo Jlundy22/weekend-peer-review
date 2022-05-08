@@ -11,7 +11,7 @@ function Feeling() {
     // dispatch feelings value to the store from here
     history.push('/understanding')
   } 
-
+  
   return (
     <div>
       <h1>How are you feeling today?</h1>

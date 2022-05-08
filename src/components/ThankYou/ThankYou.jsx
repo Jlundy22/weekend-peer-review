@@ -5,12 +5,13 @@
 function ThankYou() {
 
 
-  return <div>
+  return (<div>
     <p>
       Thank you!
     </p>
+    // button that says "Leave new feedback?" and clears out survey data. 
+  </div>)
 
-  </div>
 }
 
 export default ThankYou;

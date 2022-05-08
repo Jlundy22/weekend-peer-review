@@ -18,8 +18,7 @@ function Review() {
 
   return (
     <>
-      <h1>This page shows a review of your feedback</h1>
-      <button onClick={handleReview}>Finished?</button>
+      
 
     </>)
 }

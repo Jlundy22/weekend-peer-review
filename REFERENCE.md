@@ -1,29 +1,18 @@
-<!-- import React, { useState } from 'react';
-import axios from 'axios';
-import { useHistory } from 'react-router-dom'
+const dispatch = useDispatch()
 
-function Feeling() {
-    const [feeling, setFeeling] = useState(0);
-    const history = useHistory();
+  useEffect(() => {
+    getCharacters();
+  }, [])
 
-    const handleFeelings = () => {
-        //dispatch the feeling to the store
-        history.push('/understanding')
-    }
 
-  return (
-    <div>
-      <h1>How are you feeling today?</h1>
-      <label htmlFor="feeling">Feeling?</label>
-      <input 
-        type="number" 
-        name="feeling" 
-        value={feeling}
-        onChange={(e)=> setFeeling(e.target.value)}/>
-        <button onClick={handleFeelings}>NEXT</button>
-    
-    </div>
-  );
-}
-
-export default Feeling; -->
+  const getCharacters = () => {
+    axios.get('/anime')
+      .then(response => {
+        // runs 2 different reducers! Wow!
+        dispatch({ type: 'SET_CHARACTERS', payload: response.data });
+      })
+      .catch(error => {
+        alert('Could not get characters. Please try again later');
+        console.log('Error on GET', error);
+      })
+  }

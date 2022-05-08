@@ -1,4 +1,5 @@
 // App.js
+
 import React from 'react';
 import axios from 'axios';
 import './App.css';
@@ -11,6 +12,26 @@ import ThankYou from '../ThankYou/ThankYou';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 function App() {
+
+  const dispatch = useDispatch()
+
+  // useEffect(() => {
+  //   getFeedback();
+  // }, [])
+
+  // const getFeedback = () => {
+  //   axios.get('/')
+  //   .then(response => {
+  //     dispatch({
+  //       type: ,
+  //       payload: response.data
+  //     }).catch (error => {
+  //       alert('Could not take feedback. Please try again later.');
+  //       console.log('Error on GET', error);
+  //     })
+  //   })
+  // }
+
 
 
   return (
