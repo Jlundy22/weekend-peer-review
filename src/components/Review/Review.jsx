@@ -20,8 +20,13 @@ function Review() {
 
   const onReviewSubmit = () => {
     dispatch({
-      type: 'ADD_FEEDBACK',
-      payload: feedback
+      type: 'SET_FEEDBACK',
+      payload: {
+        feeling: feeling, 
+        understanding,
+        support, 
+        comments
+      }
     }),
 
     history.push('/thankyou');

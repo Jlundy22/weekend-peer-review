@@ -1,6 +1,6 @@
 // App.js
 
-import React from 'react';
+import React, { useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
 import Feeling from '../Feeling/Feeling';
@@ -9,15 +9,16 @@ import Understanding from '../Understanding/Understanding';
 import Support from '../Support/Support';
 import Review from '../Review/Review';
 import ThankYou from '../ThankYou/ThankYou';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
 
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-  // useEffect(() => {
-  //   getFeedback();
-  // }, [])
+  useEffect(() => {
+    // getFeedback();
+  }, [])
 
 
 
